@@ -1,0 +1,20 @@
+
+
+Version:	3.50
+CmdLine:	D:\ByteWise\FundWise\dist\FundWise.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	D:\ByteWise\FundWise\dist\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	1.004.000
+Java max ver:	
+Substitute:	JAVA_HOME = D:\Softwares\Java
+Substitute:	PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\Softwares\Min-GW\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Softwares\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;D:\Softwares\Genymotion\tools;D:\Softwares\Java\bin;D:\Softwares\Android SDK\cmdline-tools\latest\bin;D:\Softwares\Android SDK\platform-tools;D:\Softwares\Node Js\;C:\Program Files\dotnet\;D:\Softwares\Node Version Manager\nvm;D:\Softwares\Node Js;D:\Softwares\Python\Scripts\;D:\Softwares\Python\;C:\Users\jayke\AppData\Local\Microsoft\WindowsApps;D:\Softwares\Visual Studio Code\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Users\jayke\AppData\Local\GitHubDesktop\bin;D:\Softwares\Heroku CLI\heroku\bin;C:\Users\jayke\.fly\bin;C:\Users\jayke\.deta\bin;C:\Users\jayke\AppData\Roaming\npm;D:\Softwares\Node Version Manager\nvm;D:\Softwares\Node Js;;D:\Softwares\IntelliJ Idea\IntelliJ IDEA Community Edition 2023.3.2\bin;;D:\Softwares\IntelliJ IDEA\bin;;D:\Softwares\Java\bin
+JRE paths:	D:\Softwares\Java;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\Softwares\Min-GW\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Softwares\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;D:\Softwares\Genymotion\tools;D:\Softwares\Java\bin;D:\Softwares\Android SDK\cmdline-tools\latest\bin;D:\Softwares\Android SDK\platform-tools;D:\Softwares\Node Js\;C:\Program Files\dotnet\;D:\Softwares\Node Version Manager\nvm;D:\Softwares\Node Js;D:\Softwares\Python\Scripts\;D:\Softwares\Python\;C:\Users\jayke\AppData\Local\Microsoft\WindowsApps;D:\Softwares\Visual Studio Code\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Users\jayke\AppData\Local\GitHubDesktop\bin;D:\Softwares\Heroku CLI\heroku\bin;C:\Users\jayke\.fly\bin;C:\Users\jayke\.deta\bin;C:\Users\jayke\AppData\Roaming\npm;D:\Softwares\Node Version Manager\nvm;D:\Softwares\Node Js;;D:\Softwares\IntelliJ Idea\IntelliJ IDEA Community Edition 2023.3.2\bin;;D:\Softwares\IntelliJ IDEA\bin;;D:\Softwares\Java\bin
+Check launcher:	D:\Softwares\Java\bin\javaw.exe (OK)
+Version string: 1.021.000_002 / 64-Bit (OK)
+Launcher:	D:\Softwares\Java\bin\javaw.exe
+Launcher args:	-jar "D:\ByteWise\FundWise\dist\FundWise.exe"
+Args length:	45/32768 chars
+Exit code:	0
