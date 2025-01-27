@@ -464,7 +464,12 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="name_separator" min="-2" pref="6" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="customer_id_label" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="customer_id" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="hide_balance" min="-2" pref="28" max="-2" attributes="0"/>
                           <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
@@ -476,12 +481,7 @@
                               <Component id="show_balance" alignment="0" min="-2" pref="28" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="14" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="customer_id_label" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="customer_id" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace pref="24" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="deposit" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
                           <Component id="withdraw" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>

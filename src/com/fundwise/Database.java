@@ -33,7 +33,7 @@ public class Database {
         Statement statement;
         
         try{
-            String query = String.format("select password from customer where username = '%s'", username);
+            String query = String.format("select password from customers where username = '%s'", username);
             statement = connection.createStatement();
             rs = statement.executeQuery(query);
             
@@ -52,7 +52,7 @@ public class Database {
         Statement statement;
         
         try{
-            String query = String.format("select * from customer where username = '%s'", username);
+            String query = String.format("select * from customers where username = '%s'", username);
             statement = connection.createStatement();
             rs = statement.executeQuery(query);  
         }catch(SQLException e){
@@ -68,7 +68,7 @@ public class Database {
         Statement statement;
         
         try{
-            String query = String.format("select balance from customer where username = '%s'", username);
+            String query = String.format("select balance from customers where username = '%s'", username);
             statement = connection.createStatement();
             rs = statement.executeQuery(query);
             
@@ -79,7 +79,7 @@ public class Database {
             if(balance - amount > 0) {
                 transaction(connection, username, "withdraw", amount, 0);
             
-                query = String.format("update customer set balance = %.2f where username = '%s'", (balance - amount), username);
+                query = String.format("update customers set balance = %.2f where username = '%s'", (balance - amount), username);
                 statement = connection.createStatement();
                 statement.executeQuery(query);
             }else{
@@ -98,7 +98,7 @@ public class Database {
         Statement statement;
         
         try{
-            String query = String.format("select balance from customer where username = '%s'", username);
+            String query = String.format("select balance from customers where username = '%s'", username);
             statement = connection.createStatement();
             rs = statement.executeQuery(query);
             
@@ -108,7 +108,7 @@ public class Database {
             
             transaction(connection, username, "deposit", amount, 0);
             
-            query = String.format("update customer set balance = %.2f where username = '%s'", (balance + amount), username);
+            query = String.format("update customers set balance = %.2f where username = '%s'", (balance + amount), username);
             statement = connection.createStatement();
             statement.executeQuery(query);
         }catch(SQLException e){
@@ -122,7 +122,7 @@ public class Database {
         Statement statement;
         
         try{
-            String query = String.format("select id from customer where username = '%s'", username);
+            String query = String.format("select id from customers where username = '%s'", username);
             statement = connection.createStatement();
             rs = statement.executeQuery(query);
             
@@ -130,7 +130,7 @@ public class Database {
                 customer_id = rs.getInt("id");
             }
             
-            query = String.format("insert into transaction (type, from_account, to_account, amount, username) values ('%s', %d, %d, %.2f, '%s')", type, customer_id, to_account, amount, username);
+            query = String.format("insert into transactions (type, from_account, to_account, amount, username) values ('%s', %d, %d, %.2f, '%s')", type, customer_id, to_account, amount, username);
             statement = connection.createStatement();
             statement.executeQuery(query);
         }catch(SQLException e){
@@ -143,7 +143,7 @@ public class Database {
         Statement statement;
         
         try{
-            String query = String.format("select * from transaction where username = '%s'", username);
+            String query = String.format("select * from transactions where username = '%s'", username);
             statement = connection.createStatement();
             rs = statement.executeQuery(query);
         }catch(SQLException e){
@@ -158,7 +158,7 @@ public class Database {
         float balance = 0;
         Statement statement;
         try{
-            String query = String.format("select balance from customer where username = '%s'", username);
+            String query = String.format("select balance from customers where username = '%s'", username);
             statement = connection.createStatement();
             rs = statement.executeQuery(query);
             
@@ -170,7 +170,7 @@ public class Database {
                 transaction(connection, username, "transfer", amount, transfer_to);
                 update_to_account(connection, transfer_to, amount);
 
-                query = String.format("update customer set balance = %.2f where username = '%s'", (balance - amount), username);
+                query = String.format("update customers set balance = %.2f where username = '%s'", (balance - amount), username);
                 statement = connection.createStatement();
                 statement.executeQuery(query);
                 return true;
@@ -190,7 +190,7 @@ public class Database {
         Statement statement;
         
         try{
-            String query = String.format("select balance from customer where id = %d", transfer_to);
+            String query = String.format("select balance from customers where id = %d", transfer_to);
             statement = connection.createStatement();
             rs = statement.executeQuery(query);
             
@@ -198,7 +198,7 @@ public class Database {
                 balance = rs.getFloat("balance");
             }
             
-            query = String.format("update customer set balance = %.2f where id = %d", (balance + amount), transfer_to);
+            query = String.format("update customers set balance = %.2f where id = %d", (balance + amount), transfer_to);
             statement = connection.createStatement();
             statement.executeQuery(query);
         }catch(SQLException e){
